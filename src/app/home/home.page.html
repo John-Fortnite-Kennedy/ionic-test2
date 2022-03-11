@@ -14,7 +14,62 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="8">
+          <ion-card class="ion-no-margin">
+            <ion-card-header>
+              
+              <ion-card-title>Последние поступившие</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              <ion-grid class="ion-no-padding table">
+                <ion-row class="header">
+                  <ion-col>abc</ion-col>
+                  <ion-col>abc</ion-col>
+                  <ion-col>abc</ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>1</ion-col>
+                  <ion-col>1</ion-col>
+                  <ion-col>1</ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>2</ion-col>
+                  <ion-col>2</ion-col>
+                  <ion-col>2</ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="4">
+          <div id="diagrams">
+            <ion-card class="ion-no-margin">
+              <ion-card-header>
+                
+                <ion-card-title>Статистика по отделениям</ion-card-title>
+              </ion-card-header>
+            
+              <ion-card-content>
+                
+              </ion-card-content>
+            </ion-card>
+
+            <ion-card class="ion-no-margin">
+              <ion-card-header>
+                
+                <ion-card-title>Статистика по поступлениям</ion-card-title>
+              </ion-card-header>
+            
+              <ion-card-content>
+                <canvas #lineCanvas style="position: relative; height:20vh; width:40vw"></canvas>
+              </ion-card-content>
+            </ion-card>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>
